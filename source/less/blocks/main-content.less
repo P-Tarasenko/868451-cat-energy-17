@@ -10,3 +10,25 @@
   width: 320px;
   margin: 0 auto;
 }
+
+@media (min-width: @tablet) {
+  .main-content__wrapper {
+    width: 768px;
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
+  .main-content__heading {
+    width: 430px;
+    color: @black-text;
+    font-size: 60px;
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop) {
+  .main-content__wrapper {
+    width: 1300px;
+    padding: 0 40px;
+  }
+}

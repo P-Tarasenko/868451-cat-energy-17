@@ -28,10 +28,60 @@
 .slogan__wrapper {
   width: 280px;
   margin: 0 auto;
-  // display: flex;
-  // flex-direction: column;
 }
 
 .slogan__can {
   margin-top: -150px;
+}
+
+@media (min-width: @tablet) {
+.slogan {
+  padding-left: 90px;
+}
+
+  .slogan__wrapper-bg {
+    background: none;
+  }
+
+  .slogan__wrapper {
+    width: 708px;
+  }
+
+  .slogan__desc {
+    width: 290px;
+  }
+
+  .slogan__wrapper-order {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slogan__can {
+    order: 2;
+  }
+
+  .slogan__link {
+    position: relative;
+    z-index: 2;
+    top: -100px;
+    width: 245px;
+  }
+
+  .slogan__desc {
+    color: @black-text;
+    font-size: 20px;
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop) {
+  .slogan__wrapper {
+    width: 1220px;
+  }
+
+  .slogan__can {
+    position: relative;
+    left: 500px;
+    top: -200px;
+  }
 }
