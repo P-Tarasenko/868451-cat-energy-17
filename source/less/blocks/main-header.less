@@ -21,3 +21,31 @@
   background-color: transparent;
   border: none;
 }
+
+@media (min-width: @tablet) {
+  .main-header__open-menu {
+    display: none;
+  }
+
+  .main-header {
+    display: flex;
+    width: 770px;
+    padding: 0 30px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .main-header__wrapper {
+    width: 174px;
+    display: block;
+    margin: 0;
+    min-height: auto;
+  }
+}
+
+@media (min-width: @desktop) {
+  .main-header {
+    width: 1300px;
+    padding: 0 40px;
+  }
+}
