@@ -1,0 +1,30 @@
+.advantages-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.advantages-list__desc {
+  color: @grey-text;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.29;
+}
+
+@media (min-width: @tablet) {
+  .advantages-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .advantages-list__item {
+    width: 324px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .advantages-list__item {
+    width: 245px;
+  }
+}

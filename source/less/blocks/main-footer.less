@@ -2,9 +2,35 @@
   background-color: @grey;
 }
 
+.main-footer__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .main-footer__creator {
   font-family: "Arial", sans-serif;
   color: @grey-text;
   font-size: 16px;
   line-height: 1;
+}
+
+.main-footer__copyright {
+  display: flex;
+}
+
+@media (min-width: @tablet) {
+  .main-footer__wrapper {
+    width: 768px;
+    padding: 0 30px;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop) {
+  .main-footer__wrapper {
+    width: 1300px;
+    padding: 0 40px;
+  }
 }
