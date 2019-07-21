@@ -23,3 +23,32 @@
   text-align: center;
   text-transform: uppercase;
 }
+
+.goods__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: @tablet) {
+  .goods__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 708px;
+  }
+
+  .goods__item {
+    width: 324px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .goods__list {
+    width: 1220px;
+  }
+
+  .goods__item {
+    width: 245px;
+  }
+}
