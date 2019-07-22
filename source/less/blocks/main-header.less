@@ -2,3 +2,50 @@
   padding-top: 11px;
   padding-bottom: 15px;
 }
+
+.main-header__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 65px;
+}
+
+.main-header__open-menu {
+  width: 19px;
+  height: 19px;
+  background-image: url("../img/icon-close.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  background-color: transparent;
+  border: none;
+}
+
+@media (min-width: @tablet) {
+  .main-header__open-menu {
+    display: none;
+  }
+
+  .main-header {
+    display: flex;
+    width: 708px;
+    // padding: 0 30px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+
+  .main-header__wrapper {
+    width: 174px;
+    display: block;
+    margin: 0;
+    min-height: auto;
+  }
+}
+
+@media (min-width: @desktop) {
+  .main-header {
+    width: 1220px;
+    // padding: 0 40px;
+  }
+}

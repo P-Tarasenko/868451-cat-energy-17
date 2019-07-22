@@ -1,0 +1,17 @@
+.more-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: @tablet) {
+  .more-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .more-list__item {
+    width: 285px;
+  }
+}

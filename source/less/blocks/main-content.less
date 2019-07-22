@@ -4,5 +4,32 @@
   font-weight: 400;
   line-height: 1;
   text-align: center;
-  text-transform: uppercase;
+}
+
+.main-content__wrapper {
+  width: 280px;
+  margin: 0 auto;
+  // padding: 0 20px;
+}
+
+@media (min-width: @tablet) {
+  .main-content__wrapper {
+    width: 708px;
+    margin: 0 auto;
+    // padding: 0 30px;
+  }
+
+  .main-content__heading {
+    width: 430px;
+    color: @black-text;
+    font-size: 60px;
+    text-align: left;
+  }
+}
+
+@media (min-width: @desktop) {
+  .main-content__wrapper {
+    width: 1220px;
+    // padding: 0 40px;
+  }
 }

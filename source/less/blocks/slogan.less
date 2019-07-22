@@ -1,9 +1,10 @@
-.slogan {
+.slogan__wrapper-bg {
   background-color: @green;
-  background-image: url("../../img/index-background-mobile@1x.jpg");
+  background-image: url("../img/index-background-mobile@1x.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
-  margin-bottom: 22px;
+  // margin-bottom: 22px;
+  min-height: 305px;
 }
 
 .slogan__desc {
@@ -22,4 +23,63 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+}
+
+.slogan__wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.slogan__can {
+  margin-top: -150px;
+}
+
+@media (min-width: @tablet) {
+  .slogan {
+    padding-left: 90px;
+  }
+
+  .slogan__wrapper-bg {
+    background: none;
+  }
+
+  .slogan__wrapper {
+    width: 618px;
+  }
+
+  .slogan__desc {
+    width: 290px;
+    color: @black-text;
+    font-size: 20px;
+    text-align: left;
+  }
+
+  .slogan__wrapper-order {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .slogan__can {
+    order: 2;
+  }
+
+  .slogan__link {
+    position: relative;
+    z-index: 2;
+    top: -100px;
+    width: 245px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .slogan__wrapper {
+    width: 1130px;
+  }
+
+  .slogan__can {
+    width: 554px;
+    position: relative;
+    left: 500px;
+    top: -200px;
+  }
 }
