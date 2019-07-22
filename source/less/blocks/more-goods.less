@@ -1,0 +1,57 @@
+.more-goods {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.more-goods__bg-container {
+  width: 280px;
+  height: 289px;
+  background-color: @green;
+  background-image: url("../img/gift-photo-mobile@1x.jpg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+}
+
+.more-goods__bg-desc {
+  color: white;
+  font-family: "Arial", sans-serif;
+  font-size: 16px;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.more-goods__heading {
+  color: @black-text;
+  font-size: 24px;
+  line-height: 1;
+  font-weight: 400;
+}
+
+@media (min-width: @tablet) {
+  .more-goods {
+    width: 708px;
+  }
+
+  .more-goods__bg-desc {
+    text-align: left;
+  }
+
+  .more-goods__heading {
+    font-size: 36px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .more-goods {
+    width: 1220px;
+  }
+
+  .more-goods__general-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .more-goods__bg-desc {
+    text-align: center;
+  }
+}
