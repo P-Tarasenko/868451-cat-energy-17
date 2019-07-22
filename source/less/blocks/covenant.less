@@ -1,0 +1,43 @@
+.covenant {
+  display: flex;
+  justify-content: space-between;
+  width: 280px;
+  margin: 0 auto;
+}
+
+.covenant__important {
+  color: @black-text;
+  font-size: 16px;
+  line-height: 1.25;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.covenant__address {
+  color: @grey-text;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.43;
+  font-style: normal;
+}
+
+.covenant__top-space {
+  display: block;
+  text-align: left;
+}
+
+@media (min-width: @tablet) {
+  .covenant {
+    width: 708px;
+  }
+
+  .covenant__important {
+    font-size: 20px;
+  }
+
+  .covenant__address {
+    font-size: 16px;
+    line-height: 1.25;
+    text-align: right;
+  }
+}
