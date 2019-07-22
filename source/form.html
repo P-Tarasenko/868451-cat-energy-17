@@ -59,19 +59,61 @@
         <fieldset class="form-section__target">
           <ul class="target-list">
             <li class="target-list__item">
-              <input class="target-list__input" id="slim" type="radio" name="target" checked>
+              <input class="target-list__input" id="slim" type="radio" name="target" value="slim" checked>
               <label class="target-list__label" for="slim">Похудение</label>
             </li>
             <li class="target-list__item">
-              <input class="target-list__input" id="mass" type="radio" name="target">
+              <input class="target-list__input" id="mass" type="radio" name="target" value="mass">
               <label class="target-list__label" for="mass">Набор массы</label>
             </li>
             <li class="target-list__item">
-              <input class="target-list__input" id="recommendation" type="radio" name="target">
+              <input class="target-list__input" id="recommendation" type="radio" name="target" value="recommendation">
               <label class="target-list__label" for="recommendation">Не знаю (нужен ваш совет)</label>
             </li>
           </ul>
         </fieldset>
+        <fieldset class="form-section__contacts">
+          <legend class="form-section__contacts-heading">
+            Контактные данные (владельца кота)
+          </legend>
+            <ul class="contacts-list">
+              <li class="contacts-list__item">
+                <label class="contacts-list__label" for="email">E-mail:*</label>
+                <input class="contacts-list__input" type="email" name="email" id="email" placeholder="kuklachev@gmail.com">
+              </li>
+              <li class="contacts-list__item">
+                <label class="contacts-list__label" for="tel">Телефон:*</label>
+                <input class="contacts-list__input" type="tel" name="tel" id="tel" placeholder="8 (960) 900-60-90">
+              </li>
+            </ul>
+        </fieldset>
+        <fieldset class="form-section__comments">
+          <legend class="form-section__comments-heading">Комментарий</legend>
+          <textarea name="comments" rows="6" placeholder="Расскажите обо всех повадках кота" aria-label="Оставьте текст комментария здесь"></textarea>
+        </fieldset>
+        <fieldset class="form-section__more">
+          <legend class="form-section__more-heading">Дополнительно</legend>
+          <ul class="more-list">
+            <li class="more-list__item">
+              <input class="more-list__input" type="checkbox" name="sweetener" id="sweetener" checked>
+              <label class="more-list__label" for="sweetener">Сахарозаменитель</label>
+            </li>
+            <li class="more-list__item">
+              <input class="more-list__input" type="checkbox" name="water" id="water">
+              <label class="more-list__label" for="water">Питьевая вода</label>
+            </li>
+            <li class="more-list__item">
+              <input class="more-list__input" type="checkbox" name="milk" id="milk">
+              <label class="more-list__label" for="milk">Молоко</label>
+            </li>
+            <li class="more-list__item">
+              <input class="more-list__input" type="checkbox" name="vitamins" id="vitamins">
+              <label class="more-list__label" for="vitamins">Витамины</label>
+            </li>
+          </ul>
+        </fieldset>
+        <button class="form-section__button" type="submit">Отправить заявку</button>
+        <p class="form-section__explanation">* — Обязательное поле</p>
       </form>
     </section>
   </main>
