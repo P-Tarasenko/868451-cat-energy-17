@@ -5,6 +5,9 @@
 }
 
 .menu-list__link {
+  display: block;
+  padding-top: 22px;
+  padding-bottom: 23px;
   color: @black-text;
   font-size: 20px;
   font-weight: 500;
@@ -12,6 +15,23 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+
+  &:hover[href] {
+    opacity: 0.6;
+  }
+
+  &:active[href] {
+    opacity: 0.3;
+  }
+}
+
+.menu-list__item {
+  text-align: center;
+  border-top: 1px solid #e6e6e6;
+
+  &:last-child {
+    border-bottom: 1px solid #e6e6e6;
+  }
 }
 
 @media (min-width: @tablet) {
