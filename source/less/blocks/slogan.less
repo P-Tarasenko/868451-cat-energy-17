@@ -19,6 +19,9 @@
 }
 
 .slogan__link {
+  display: block;
+  padding-top: 11px;
+  padding-bottom: 11px;
   background-color: @green;
   color: white;
   font-size: 14px;
@@ -26,6 +29,14 @@
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: #5eaa2f;
+  }
+
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
 }
 
 .slogan__wrapper {
