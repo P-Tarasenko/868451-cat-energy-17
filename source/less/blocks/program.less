@@ -2,7 +2,12 @@
   background-color: @grey;
   padding-top: 26px;
   padding-left: 20px;
+  padding-right: 20px;
   margin-top: 20px;
+}
+
+.program:last-child {
+  padding-top: 30px;
 }
 
 .program__desc {
@@ -17,8 +22,8 @@
 .program__heading {
   position: relative;
   margin: 0;
-  margin-top: 5px;
-  margin-left: -8px;
+  margin-top: 4px;
+  margin-left: 12px;
   color: @black-text;
   font-size: 24px;
   font-weight: 400;
@@ -30,7 +35,7 @@
     content: "";
     position: absolute;
     top: -5px;
-    left: 10px;
+    left: -10px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -42,7 +47,7 @@
   content: "";
   position: absolute;
   top: -8px;
-  left: 18px;
+  left: -2px;
   width: 35px;
   height: 49px;
   background-image: url("../img/icon-cat-slim.svg");
@@ -53,17 +58,17 @@
 
 .program__heading--mass {
   margin: 0;
-  margin-left: 20px;
+  margin-left: 40px;
 
   &::before {
-    left: -17px;
+    left: -38px;
   }
 
   &::after {
     content: "";
     position: absolute;
     top: 5px;
-    left: -27px;
+    left: -47px;
     width: 67px;
     height: 28px;
     background-image: url("../img/icon-cat-pro.svg");
@@ -73,6 +78,7 @@
 }
 
 .program__link {
+  position: relative;
   display: block;
   margin-top: 20px;
   color: @black-text;
@@ -80,9 +86,30 @@
   line-height: 1;
   text-decoration: none;
   text-transform: uppercase;
-  padding-top: 22px;
-  padding-bottom: 24px;
-  border-bottom: 1px solid @grey;
+  padding-top: 21px;
+  padding-bottom: 22px;
+  border-top: 1px solid #d9d9d9;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 96px;
+    width: 25px;
+    height: 12px;
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  &:hover::before {
+    width: 34px;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @desktop) {
