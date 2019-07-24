@@ -1,5 +1,8 @@
 .program {
   background-color: @grey;
+  padding-top: 26px;
+  padding-left: 20px;
+  margin-top: 20px;
 }
 
 .program__desc {
@@ -7,22 +10,79 @@
   color: #444444;
   font-size: 14px;
   line-height: 1.29;
+  margin-top: 30px;
+  width: 226px;
 }
 
 .program__heading {
+  position: relative;
+  margin: 0;
+  margin-top: 5px;
+  margin-left: -8px;
   color: @black-text;
   font-size: 24px;
   font-weight: 400;
   line-height: 1.54;
   text-transform: uppercase;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: @green;
+  }
+}
+
+.program__heading--slim::after {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: 18px;
+  width: 35px;
+  height: 49px;
+  background-image: url("../img/icon-cat-slim.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  // z-index: 2;
+}
+
+.program__heading--mass {
+  margin: 0;
+  margin-left: 20px;
+
+  &::before {
+    left: -17px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -27px;
+    width: 67px;
+    height: 28px;
+    background-image: url("../img/icon-cat-pro.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
 }
 
 .program__link {
+  display: block;
+  margin-top: 20px;
   color: @black-text;
   font-size: 16px;
   line-height: 1;
   text-decoration: none;
   text-transform: uppercase;
+  padding-top: 22px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid @grey;
 }
 
 @media (min-width: @desktop) {
