@@ -1,6 +1,7 @@
 .main-footer {
   background-color: @grey;
   padding-top: 39px;
+  padding-bottom: 16px;
 }
 
 .main-footer__wrapper {
@@ -30,7 +31,24 @@
 }
 
 .main-footer__copyright {
+  margin-top: 14px;
+}
+
+.main-footer__creator-link {
   display: flex;
+  text-decoration: none;
+  justify-content: space-between;
+  align-items: center;
+
+  &:hover .main-footer__creator-image {
+    path {
+      fill: @green;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: @tablet) {
