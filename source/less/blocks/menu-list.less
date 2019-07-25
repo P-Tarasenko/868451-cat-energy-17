@@ -5,6 +5,7 @@
 }
 
 .menu-list__link {
+  position: relative;
   display: block;
   padding-top: 22px;
   padding-bottom: 23px;
@@ -37,8 +38,37 @@
 @media (min-width: @tablet) {
   .menu-list {
     display: flex;
-    width: 470px;
+    width: 450px;
+    padding-left: 10px;
     justify-content: space-between;
     align-items: center;
+  }
+
+  .menu-list__item {
+    border: none;
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  .menu-list__link {
+    padding-top: 30px;
+    padding-bottom: 18px;
+    color: @black-text2;
+    font-size: 18px;
+    line-height: 1.39;
+    text-align: left;
+    font-weight: 400;
+  }
+
+  .menu-list__link-active::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    width: 62px;
+    height: 2px;
+    background-color: @green;
   }
 }
