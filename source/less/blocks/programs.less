@@ -1,3 +1,30 @@
+@media (min-width: @tablet) {
+  .programs {
+    width: 708px;
+
+    .programs__mass {
+      padding-top: 75px;
+
+      .program__link::before {
+        left: 125px;
+      }
+    }
+  }
+
+  .programs__slim {
+    // padding-bottom: 40px;
+    margin-bottom: 30px;
+  }
+
+  .programs__slim .program__desc {
+    width: 375px;
+  }
+
+  .programs__mass .program__desc {
+    width: 340px;
+  }
+}
+
 @media (min-width: @desktop) {
   .programs {
     display: flex;
