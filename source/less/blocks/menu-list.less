@@ -38,6 +38,7 @@
 @media (min-width: @tablet) {
   .menu-list {
     display: flex;
+    flex-wrap: wrap;
     width: 450px;
     padding-left: 10px;
     justify-content: space-between;
@@ -70,5 +71,23 @@
     width: 62px;
     height: 2px;
     background-color: @green;
+  }
+}
+
+@media (min-width: @desktop) {
+  .menu-list {
+    width: auto;
+    padding-left: 0;
+  }
+
+  .menu-list__link {
+    color: white;
+    font-size: 20px;
+    line-height: 1.25;
+  }
+
+  .menu-list__link-active::after {
+    width: 68px;
+    background-color: white;
   }
 }

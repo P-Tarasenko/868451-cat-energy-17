@@ -53,10 +53,6 @@
 }
 
 @media (min-width: @tablet) {
-  .slogan {
-    // padding-left: 90px;
-  }
-
   .slogan__wrapper-bg {
     width: 708px;
     background: none;
@@ -110,10 +106,29 @@
     width: 1130px;
   }
 
+  .slogan__wrapper-bg {
+    position: relative;
+    top: -120px;
+    right: -360px;
+    width: 720px;
+    height: 696px;
+    background-color: @green;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  .slogan__wrapper-padding {
+    position: relative;
+    top: 170px;
+    left: -617px;
+  }
+
   .slogan__can {
     width: 554px;
     position: relative;
     left: 500px;
     top: -200px;
+    // z-index: 2;
   }
 }
