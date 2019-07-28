@@ -12,7 +12,11 @@
 }
 
 .main-footer__logo-container {
+  width: 128px;
+  margin: 0 auto;
   margin-bottom: 31px;
+  // align-self: center;
+  // text-align: center;
 }
 
 .main-footer__link[href]:hover {
@@ -52,11 +56,26 @@
 }
 
 @media (min-width: @tablet) {
+  .main-footer {
+    padding-top: 39px;
+    padding-bottom: 39px;
+  }
+
   .main-footer__wrapper {
     width: 708px;
     // padding: 0 30px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
+  }
+
+  .main-footer__copyright{
+    width: 162px;
+    margin: 0;
+  }
+
+  .main-footer__logo-container {
+    margin: 0;
   }
 }
 

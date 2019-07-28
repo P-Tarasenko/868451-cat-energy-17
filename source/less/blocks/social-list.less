@@ -74,3 +74,30 @@
     background-image: url("../img/icon-fb-green.svg");
   }
 }
+
+@media (min-width: @tablet) {
+  .social-list {
+    width: 122px;
+    margin-left: 20px;
+
+    &::before,
+    &::after {
+      display: none;
+    }
+  }
+
+  .social-list__vk {
+    width: 30px;
+    height: 16px;
+  }
+
+  .social-list__inst {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social-list__fb {
+    width: 14px;
+    height: 28px;
+  }
+}
