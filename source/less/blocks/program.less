@@ -177,4 +177,43 @@
   .program {
     width: 570px;
   }
+
+  .program__heading {
+    text-align: center;
+    padding-left: 12px;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      top: -30px;
+      left: 20px;
+    }
+  }
+
+  .program__heading--mass {
+    padding-left: 51px;
+
+    &::after {
+      width: 134px;
+      height: 57px;
+      top: -7px;
+      left: 2px;
+    }
+  }
+
+  .program__heading--slim::after {
+    width: 71px;
+    height: 97px;
+    top: -36px;
+    left: 34px;
+  }
+
+  .program__desc {
+    margin-top: 73px;
+  }
+
+  .program__link {
+    margin-top: 0;
+    padding-top: 16px;
+  }
 }
