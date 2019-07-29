@@ -3,3 +3,14 @@
     width: 152px;
   }
 }
+
+@media (min-width: @desktop) {
+  .catalog-header .menu-list__link {
+    color: @black-text;
+
+    &::after {
+      width: 168px;
+      background-color: @green;
+    }
+  }
+}
