@@ -18,12 +18,12 @@
             alt="Логотип Кэт Энерджи">
         </a>
       </div>
-      <button class="main-header__open-menu"></button>
+      <button class="main-header__button-menu"><span class="visually-hidden">Открыть меню</span></button>
     </div>
     <nav class="main-nav">
       <ul class="menu-list main-header__list">
         <li class="menu-list__item">
-          <a class="menu-list__link">Главная</a>
+          <a class="menu-list__link menu-list__link--active">Главная</a>
         </li>
         <li class="menu-list__item">
           <a class="menu-list__link" href="catalog.html">Каталог продукции</a>
@@ -35,31 +35,32 @@
     </nav>
   </header>
   <main class="main-content">
+
+    <section class="slogan">
+      <div class="slogan__wrapper-bg">
+        <div class="slogan__wrapper slogan__wrapper-padding">
+          <h1 class="main-content__heading">Функциональное питание для котов</h1>
+          <p class="slogan__desc">Занялся собой? Займись котом!</p>
+        </div>
+      </div>
+      <div class="slogan__wrapper slogan__wrapper--order">
+        <div class="slogan__can">
+          <img class="slogan__image" src="img/index-can-mobile@1x.png" alt="Изображение продукции Кэт Энерджи"
+            width="280" height="270">
+        </div>
+        <a class="slogan__link button" href="#">Подобрать программу</a>
+      </div>
+    </section>
     <div class="main-content__wrapper">
-      <section class="slogan">
-        <div class="slogan__wrapper-bg">
-          <div class="slogan__wrapper">
-            <h1 class="main-content__heading">Функциональное питание для котов</h1>
-            <p class="slogan__desc">Занялся собой? Займись котом!</p>
-          </div>
-        </div>
-        <div class="slogan__wrapper slogan__wrapper-order">
-          <div class="slogan__can">
-            <img class="slogan__image" src="img/index-can-mobile@1x.png" alt="Изображение продукции Кэт Энерджи"
-              width="280" height="270">
-          </div>
-          <a class="slogan__link" href="#">Подобрать программу</a>
-        </div>
-      </section>
       <section class="programs">
         <h2 class="visually-hidden">Наши программы:</h2>
-        <article class="program">
+        <article class="program program--slim">
           <h3 class="program__heading program__heading--slim">Похудение</h3>
           <p class="program__desc">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на
             диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
           <a class="program__link" href="#">Каталог slim</a>
         </article>
-        <article class="program">
+        <article class="program program--mass">
           <h3 class="program__heading program__heading--mass">Набор массы</h3>
           <p class="program__desc">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет
             вашему коту нарастить необходимые мышцы!</p>
@@ -80,7 +81,7 @@
             <p class="advantages-list__desc">Замените один-два приема обычной еды на наше функциональное питание.</p>
           </li>
           <li class="advantages-list__item">
-            <p class="advantages-list__desc">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+            <p class="advantages-list__desc">Уже через месяц наслаждайтесь изменениями к лучшему<br> вашего питомца!</p>
           </li>
         </ul>
       </section>
@@ -92,8 +93,8 @@
       <h2 class="visually-hidden">Мы на карте:</h2>
       <div class="map__wrapper">
         <div class="covenant">
-          <strong class="covenant__important">Приглашаем к сотрудничеству дилеров!</strong>
-          <address class="covenant__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</address>
+          <strong class="covenant__important">Приглашаем<br> к сотрудничеству дилеров!</strong>
+          <address class="covenant__address">ул. Большая Конюшенная, д. 19/8 <span class="covenant__address-space">Санкт-Петербург</span></address>
         </div>
       </div>
       <div class="map__pic">
@@ -111,23 +112,26 @@
       </div>
       <ul class="social-list">
         <li class="social-list__item">
-          <a class="social-list__link" href="vk.com">Вконтакте</a>
+          <a class="social-list__link social-list__link--vk" href="vk.com"><span class="visually-hidden">Вконтакте</span></a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="instagram.com">Инстаграм</a>
+          <a class="social-list__link social-list__link--inst" href="instagram.com"><span
+              class="visually-hidden">Инстаграм</span></a>
         </li>
         <li class="social-list__item">
-          <a class="social-list__link" href="facebook.com">Фейсбук</a>
+          <a class="social-list__link social-list__link--fb" href="facebook.com"><span
+              class="visually-hidden">Фейсбук</span></a>
         </li>
       </ul>
       <div class="main-footer__copyright">
-        <p class="main-footer__creator">HTML Academy</p>
-        <div class="main-footer__creator-logo">
-          <a class="main-footer__creator-link" href="https://htmlacademy.ru">
-            <img class="main-footer__creator-image" src="img/htmlacademy.svg" alt="Логотип HTML Academy" width="27"
-              height="34">
-          </a>
-        </div>
+        <a class="main-footer__creator-link" href="https://htmlacademy.ru">
+          <p class="main-footer__creator">HTML Academy</p>
+          <svg class="main-footer__creator-image" cxmlns="http://www.w3.org/2000/svg" width="26.943" height="34.09" viewBox="0 0 26.943 34.09">
+            <path
+            fill="#666666";
+              d="M13.62.017L13.472 0 0 1.412v24.661l13.473 8.017 13.43-7.99.042-.025V1.412L13.62.017zm11.399 12.11L13.495 5.334l-.001-.104-.087.05-.088-.056v.109L1.925 12.118V3.147l11.548-1.212L25.02 3.147v8.98zm-11.614-5.34L24.923 13.5l-4.479 2.64-7.093-4.221-.014 1.415 5.904 3.513-.86.507-5.03-2.992-.014 1.415 3.827 2.275-.782.523-3.031-1.787-.014 1.413 1.853 1.091-1.8 1.081-11.356-6.751 11.371-6.835zm-11.48 8.34l11.411 6.791.016 1.044-7.942-4.728-.015 1.416 7.979 4.795.018 1.076-7.973-4.74-.013 1.414 8.021 4.822.046.025 8.143-4.872-.011-5.177 3.415-2.036v10.021L13.472 31.85 1.925 24.979v-9.852z" />
+          </svg>
+        </a>
       </div>
     </div>
   </footer>

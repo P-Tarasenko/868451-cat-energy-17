@@ -1,13 +1,25 @@
 .goods__buy-all {
+  display: block;
+  padding: 10px 0;
   background-color: @grey;
   color: @grey-text;
   font-size: 16px;
   line-height: 1.25;
   text-decoration: none;
   text-transform: uppercase;
+
+  &:hover {
+    background-color: #ebebeb;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+  }
 }
 
 .goods__definition {
+  margin-top: 10px;
+  margin-bottom: 20px;
   color: @grey-text;
   font-family: "Arial", sans-serif;
   font-size: 12px;
@@ -16,6 +28,7 @@
 }
 
 .goods__title {
+  margin-bottom: 10px;
   color: @black-text;
   font-size: 16px;
   font-weight: 400;
@@ -30,16 +43,76 @@
   padding: 0;
 }
 
+.goods__item {
+  margin-bottom: 23px;
+}
+
+.goods__more {
+  position: relative;
+  padding-top: 63px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 31px;
+    height: 31px;
+    top: 25px;
+    left: 124px;
+    background-image: url("../img/icon-plus-mobile.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    opacity: 0.2;
+  }
+}
+
 @media (min-width: @tablet) {
   .goods__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     width: 708px;
+    margin-top: 165px;
   }
 
   .goods__item {
     width: 324px;
+    margin-bottom: 140px;
+
+    &:last-child {
+      border: 1px solid rgba(205, 205, 205, 0.5);
+    }
+  }
+
+  .goods__title {
+    width: 135px;
+    margin: 0 auto;
+    margin-bottom: 23px;
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .goods__more {
+    padding-top: 164px;
+
+    &::before {
+      top: 53px;
+      left: 132px;
+      width: 61px;
+      height: 61px;
+      background-image: url("../img/icon-plus.svg");
+    }
+  }
+
+  .goods__definition {
+    width: 168px;
+    margin: 0 auto;
+    font-size: 16px;
+  }
+
+  .goods__buy-all {
+    width: 249px;
+    margin: 0 auto;
+    margin-top: 83px;
   }
 }
 
@@ -50,5 +123,14 @@
 
   .goods__item {
     width: 245px;
+    margin-bottom: 142px;
+  }
+
+  .goods__buy-all {
+    width: 169px;
+  }
+
+  .goods__more::before {
+    left: 92px;
   }
 }

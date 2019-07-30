@@ -1,4 +1,6 @@
 .slogan__wrapper-bg {
+  width: 320px;
+  margin: 0 auto;
   background-color: @green;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-position: 0 0;
@@ -13,16 +15,15 @@
   line-height: 1;
   text-align: center;
   text-transform: uppercase;
+  margin-top: 25px;
 }
 
 .slogan__link {
-  background-color: @green;
-  color: white;
+  display: block;
+  padding-top: 11px;
+  padding-bottom: 11px;
   font-size: 14px;
   line-height: 1.29;
-  text-align: center;
-  text-decoration: none;
-  text-transform: uppercase;
 }
 
 .slogan__wrapper {
@@ -30,33 +31,44 @@
   margin: 0 auto;
 }
 
+.slogan__wrapper-padding {
+  padding-top: 27px;
+}
+
 .slogan__can {
   margin-top: -150px;
 }
 
 @media (min-width: @tablet) {
-  .slogan {
-    padding-left: 90px;
-  }
-
   .slogan__wrapper-bg {
+    width: 708px;
     background: none;
+    // padding-left: 88px;
+    padding-top: 26px;
   }
 
   .slogan__wrapper {
-    width: 618px;
+    width: 708px;
+  }
+
+  .slogan__wrapper-padding {
+    padding-left: 88px;
   }
 
   .slogan__desc {
     width: 290px;
+    margin-top: 42px;
     color: @black-text;
     font-size: 20px;
     text-align: left;
   }
 
-  .slogan__wrapper-order {
+  .slogan__wrapper--order {
     display: flex;
     flex-direction: column;
+    padding-left: 89px;
+    margin-top: 79px;
+    min-height: 460px; /*Потом убрать, будет больше изображение*/
   }
 
   .slogan__can {
@@ -68,6 +80,11 @@
     z-index: 2;
     top: -100px;
     width: 245px;
+    font-size: 20px;
+    line-height: 1;
+    padding-top: 14px;
+    padding-bottom: 18px;
+    // text-align: left;
   }
 }
 
@@ -76,10 +93,41 @@
     width: 1130px;
   }
 
+  .slogan__wrapper-bg {
+    position: relative;
+    top: -120px;
+    right: -360px;
+    width: 720px;
+    height: 696px;
+    background-color: @green;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  .slogan__wrapper-padding {
+    position: relative;
+    top: 170px;
+    left: -617px;
+  }
+
   .slogan__can {
     width: 554px;
     position: relative;
     left: 500px;
-    top: -200px;
+    // top: -200px;
+    // z-index: 2;
+  }
+
+  .slogan__wrapper--order {
+    position: absolute;
+    top: 456px;
+    left: 332px;
+    margin-top: 0;
+    min-height: auto;
+  }
+
+  .slogan__link {
+    top: 0;
   }
 }

@@ -1,5 +1,13 @@
 .program {
   background-color: @grey;
+  padding-top: 26px;
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 20px;
+}
+
+.program:last-child {
+  padding-top: 30px;
 }
 
 .program__desc {
@@ -7,26 +15,237 @@
   color: #444444;
   font-size: 14px;
   line-height: 1.29;
+  margin-top: 30px;
+  width: 226px;
 }
 
 .program__heading {
+  position: relative;
+  margin: 0;
+  margin-top: 4px;
+  margin-left: 12px;
   color: @black-text;
   font-size: 24px;
   font-weight: 400;
   line-height: 1.54;
   text-transform: uppercase;
+  text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: @green;
+  }
+}
+
+.program__heading--slim::after {
+  content: "";
+  position: absolute;
+  top: -8px;
+  left: -2px;
+  width: 35px;
+  height: 49px;
+  background-image: url("../img/icon-cat-slim.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  // z-index: 2;
+}
+
+.program__heading--mass {
+  margin: 0;
+  margin-left: 40px;
+
+  &::before {
+    left: -38px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 5px;
+    left: -47px;
+    width: 67px;
+    height: 28px;
+    background-image: url("../img/icon-cat-pro.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
 }
 
 .program__link {
+  position: relative;
+  display: block;
+  margin-top: 20px;
   color: @black-text;
   font-size: 16px;
   line-height: 1;
   text-decoration: none;
   text-transform: uppercase;
+  padding-top: 21px;
+  padding-bottom: 22px;
+  border-top: 1px solid #d9d9d9;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 24px;
+    left: 96px;
+    width: 25px;
+    height: 12px;
+    background-image: url("../img/icon-right-arrow-long.svg");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+  }
+
+  &:hover::before {
+    width: 34px;
+    background-image: url("../img/icon-right-arrow-verylong.svg");
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet) {
+  .program {
+    padding-top: 72px;
+    padding-bottom: 40px;
+  }
+
+  .program__heading {
+    font-size: 36px;
+    line-height: 1.03;
+    text-align: left;
+    padding-left: 21px;
+
+    &::before {
+      width: 200px;
+      height: 200px;
+      left: 415px;
+      top: 15px;
+    }
+  }
+
+  .program__heading--mass {
+    margin-left: 12px;
+  }
+
+  .program__heading--slim::after {
+    width: 141px;
+    height: 194px;
+    left: 445px;
+    top: 4px;
+  }
+
+  .program__heading--mass::after {
+    width: 268px;
+    height: 113px;
+    left: 381px;
+    top: 60px;
+  }
+
+  .program__heading--mass::before {
+    left: 416px;
+  }
+
+  .program__desc {
+    margin-top: 25px;
+    margin-left: 33px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .program__link {
+    margin-left: 33px;
+    margin-top: 35px;
+    border: none;
+    font-size: 20px;
+
+    &::before {
+      left: 125px;
+    }
+  }
+
+  .program--slim {
+    margin-bottom: 30px;
+
+    .program__link::before {
+      left: 130px;
+    }
+  }
+
+  .program--slim .program__desc {
+    width: 375px;
+  }
+
+  .program--mass .program__desc {
+    width: 340px;
+  }
 }
 
 @media (min-width: @desktop) {
   .program {
     width: 570px;
+  }
+
+  .program__heading {
+    text-align: center;
+    padding-left: 12px;
+
+    &::before {
+      width: 100px;
+      height: 100px;
+      top: -30px;
+      left: 20px;
+    }
+  }
+
+  .program__heading--mass {
+    padding-left: 51px;
+
+    &::after {
+      width: 134px;
+      height: 57px;
+      top: -7px;
+      left: 2px;
+    }
+  }
+
+  .program__heading--slim::after {
+    width: 71px;
+    height: 97px;
+    top: -36px;
+    left: 34px;
+  }
+
+  .program__desc {
+    margin-top: 73px;
+  }
+
+  .program__link {
+    margin-top: 0;
+    padding-top: 16px;
+
+    &::before {
+      top: 20px;
+    }
+  }
+
+  .program--slim {
+    margin-bottom: 0;
+
+    .program__desc {
+      width: 465px;
+    }
+  }
+
+  .program--mass .program__desc {
+    width: 450px;
   }
 }

@@ -1,10 +1,19 @@
-.programs {
-  margin-bottom: 20px;
+@media (min-width: @tablet) {
+  .programs {
+    width: 708px;
+
+    .program--mass {
+      padding-top: 75px;
+    }
+  }
 }
 
 @media (min-width: @desktop) {
   .programs {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: -57px;
+    width: 1220px;
   }
 }
