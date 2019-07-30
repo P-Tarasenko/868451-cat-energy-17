@@ -167,9 +167,25 @@
     border: none;
     font-size: 20px;
 
-    // &::before {
-    //   left: 131px;
-    // }
+    &::before {
+      left: 125px;
+    }
+  }
+
+  .program--slim {
+    margin-bottom: 30px;
+
+    .program__link::before {
+      left: 130px;
+    }
+  }
+
+  .program--slim .program__desc {
+    width: 375px;
+  }
+
+  .program--mass .program__desc {
+    width: 340px;
   }
 }
 
@@ -219,5 +235,17 @@
     &::before {
       top: 20px;
     }
+  }
+
+  .program--slim {
+    margin-bottom: 0;
+
+    .program__desc {
+      width: 465px;
+    }
+  }
+
+  .program--mass .program__desc {
+    width: 450px;
   }
 }
