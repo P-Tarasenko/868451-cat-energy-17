@@ -1,30 +1,65 @@
 .more-goods {
   width: 280px;
   margin: 0 auto;
+  margin-top: 28px;
 }
 
 .more-goods__bg-container {
+  margin-top: 40px;
+  padding-top: 1px;
   width: 280px;
   height: 289px;
   background-color: @green;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-position: 0 0;
   background-repeat: no-repeat;
+
+  @media (min-resolution: @dpi), (min-resolution: @dppx) {
+    background-image: url("../img/gift-photo-mobile@2x.jpg");
+    background-size: 280px auto;
+  }
 }
 
 .more-goods__bg-desc {
+  position: relative;
+  margin: 0 auto;
+  margin-top: 60px;
+  padding-top: 126px;
+  width: 165px;
   color: white;
   font-family: "Arial", sans-serif;
   font-size: 16px;
   line-height: 1.25;
   text-align: center;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 56px;
+    height: 61px;
+    background-image: url("../img/icon-gift.svg");
+    top: 04px;
+    left: 55px;
+  }
 }
 
 .more-goods__heading {
+  position: relative;
+  width: 230px;
   color: @black-text;
   font-size: 24px;
   line-height: 1;
   font-weight: 400;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 53px;
+    height: 3px;
+    background-color: @green;
+    right: -70px;
+    top: 14px;
+  }
 }
 
 @media (min-width: @tablet) {

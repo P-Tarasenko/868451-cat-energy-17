@@ -1,6 +1,33 @@
 .other-list {
   list-style: none;
   .space();
+  margin-top: 34px;
+}
+
+.other-list__item {
+  position: relative;
+  padding-top: 14px;
+  padding-bottom: 17px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 1px;
+    background-color: #cdcdcd;
+    top: 0;
+    left: 0;
+  }
+
+  &:last-child::after {
+    content: "";
+    position: absolute;
+    width: 280px;
+    height: 1px;
+    background-color: #cdcdcd;
+    bottom: 0;
+    left: 0;
+  }
 }
 
 .other-list__good-wrapper {
@@ -14,11 +41,18 @@
 }
 
 .other-list__good {
+  margin: 0;
   color: @black-text2;
   font-size: 16px;
   line-height: 1;
   font-weight: 400;
   text-transform: uppercase;
+}
+
+.other-list__button {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 @media (min-width: @tablet) {
