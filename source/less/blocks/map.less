@@ -1,12 +1,22 @@
+.map {
+  margin-top: 34px;
+}
+
 .map__pic {
+  position: relative;
   margin: 0 auto;
+  margin-top: -36px;
   width: 320px;
   line-height: 0;
   font-size: 0;
+  z-index: 1;
 }
 
 .map__wrapper--bg {
+  position: relative;
+  padding-top: 1px;
   background-color: @grey;
+  z-index: 2;
 }
 
 @media (min-width: @tablet) {
