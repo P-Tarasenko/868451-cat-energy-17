@@ -8,7 +8,7 @@
   margin-top: 40px;
   padding-top: 1px;
   width: 280px;
-  height: 289px;
+  min-height: 289px;
   background-color: @green;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-position: 0 0;
@@ -65,14 +65,57 @@
 @media (min-width: @tablet) {
   .more-goods {
     width: 708px;
+    margin-top: -105px;
   }
 
   .more-goods__bg-desc {
+    margin-top: 71px;
+    margin-left: 424px;
+    padding-top: 0;
     text-align: left;
+
+    &::before {
+      top: -7px;
+      left: -334px;
+    }
   }
 
   .more-goods__heading {
+    width: 390px;
+    padding-left: 37px;
     font-size: 36px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 29px;
+      height: 3px;
+      background-color: @green;
+      top: 22px;
+      left: -31px;
+    }
+
+    &::after {
+      width: 327px;
+      right: -348px;
+      top: 22px;
+    }
+  }
+
+  .more-goods__general-wrapper {
+    margin-top: 80px;
+  }
+
+  .more-goods__bg-container {
+    width: auto;
+    min-height: 200px;
+    margin-top: 70px;
+    background-image: url("../img/gift-photo-tablet@1x.jpg");
+    background-size: 708px auto;
+
+    @media (min-resolution: @dpi), (min-resolution: @dppx) {
+      background-image: url("../img/gift-photo-tablet@2x.jpg");
+    }
   }
 }
 
