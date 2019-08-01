@@ -7,6 +7,11 @@
   background-repeat: no-repeat;
   // margin-bottom: 22px;
   min-height: 305px;
+
+  @media (min-resolution: @dpi), (min-resolution: @dppx) {
+    background-image: url("../img/index-background-mobile@2x.jpg");
+    background-size: 320px auto;
+  }
 }
 
 .slogan__desc {
@@ -73,6 +78,10 @@
 
   .slogan__can {
     order: 2;
+    width: 709px;
+    margin-top: -181px;
+    margin-left: -90px;
+    min-height: auto;
   }
 
   .slogan__link {
@@ -89,6 +98,12 @@
 }
 
 @media (min-width: @desktop) {
+  .slogan {
+    position: relative;
+    width: 1220px;
+    margin: 0 auto;
+  }
+
   .slogan__wrapper {
     width: 1130px;
   }
@@ -103,6 +118,11 @@
     background-image: url("../img/index-background-desktop@1x.jpg");
     background-position: 0 0;
     background-repeat: no-repeat;
+
+    @media (min-resolution: @dpi), (min-resolution: @dppx) {
+      background-image: url("../img/index-background-desktop@2x.jpg");
+      background-size: 720px auto;
+    }
   }
 
   .slogan__wrapper-padding {
@@ -114,16 +134,16 @@
   .slogan__can {
     width: 554px;
     position: relative;
-    left: 500px;
-    // top: -200px;
-    // z-index: 2;
+    left: 460px;
+    top: -185px;
   }
 
   .slogan__wrapper--order {
     position: absolute;
-    top: 456px;
-    left: 332px;
+    top: 338px;
+    left: 80px;
     margin-top: 0;
+    padding-left: 0;
     min-height: auto;
   }
 
