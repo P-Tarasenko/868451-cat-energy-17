@@ -7,10 +7,11 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="css/style.css">
-  <!-- <script>
-    // document.createElement("picture");
-  </script> -->
-  <!-- <script src="js/picturefill.js" async></script> -->
+  <script>
+    document.createElement("picture");
+
+  </script>
+  <script src="js/picturefill.js" async></script>
 </head>
 
 <body>
@@ -142,7 +143,12 @@
         </div>
       </div>
       <div class="map__pic">
-        <img src="img/my-map-mobi.jpg" width="320" height="400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+          <img class="map__image" src="img/bg-map-mobile@1x.png" width="320" height="400"
+            srcset="img/bg-map-mobile@2x.png 2x" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        </picture>
+        <img class="map__pin" src="img/map-pin.png" width="62">
       </div>
     </section>
   </main>

@@ -7,10 +7,10 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="format-detection" content="telephone=no">
   <link rel="stylesheet" href="css/style.css">
-  <!-- <script>
-    // document.createElement("picture");
-  </script> -->
-  <!-- <script src="js/picturefill.js" async></script> -->
+  <script>
+    document.createElement("picture");
+  </script>
+  <script src="js/picturefill.js" async></script>
 </head>
 
 <body>
@@ -312,7 +312,7 @@
                     <span class="other-list__price">200 Р.</span>
                   </div>
                 </div>
-                <a class="button">Заказать</a>
+                <a class="button other-list__button" href="#">Заказать</a>
               </article>
             </li>
             <li class="other-list__item">
@@ -324,7 +324,7 @@
                     <span class="other-list__price">50 Р.</span>
                   </div>
                 </div>
-                <a class="button">Заказать</a>
+                <a class="button other-list__button" href="#">Заказать</a>
               </article>
             </li>
             <li class="other-list__item">
@@ -336,7 +336,7 @@
                     <span class="other-list__price">100 Р.</span>
                   </div>
                 </div>
-                <a class="button">Заказать</a>
+                <a class="button other-list__button" href="#">Заказать</a>
               </article>
             </li>
             <li class="other-list__item">
@@ -348,12 +348,12 @@
                     <span class="other-list__price">300 Р.</span>
                   </div>
                 </div>
-                <a class="button">Заказать</a>
+                <a class="button other-list__button" href="#">Заказать</a>
               </article>
             </li>
           </ul>
           <div class="more-goods__bg-container">
-            <p class="more-goods__bg-desc">Закажите все и получите чехол для кота в подарок!</p>
+            <p class="more-goods__bg-desc">Закажите все<br> и получите чехол для кота в подарок!</p>
           </div>
         </div>
       </section>
@@ -362,14 +362,19 @@
       <h2 class="visually-hidden">Мы на карте:</h2>
       <div class="map__wrapper map__wrapper--bg">
         <div class="covenant">
-          <strong class="covenant__important">Приглашаем к сотрудничеству дилеров!</strong>
+          <strong class="covenant__important">Приглашаем<br> к сотрудничеству дилеров!</strong>
           <address class="covenant__address">ул. Большая Конюшенная, д. 19/8
-            <span class="covenant__top-space">Санкт-Петербург</span>
+            <span class="covenant__address-space">Санкт-Петербург</span>
           </address>
         </div>
       </div>
       <div class="map__pic">
-        <img src="img/my-map-mobi.jpg" width="320" height="400" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+          <img class="map__image" src="img/bg-map-mobile@1x.png" width="320" height="400"
+            srcset="img/bg-map-mobile@2x.png 2x" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+        </picture>
+        <img class="map__pin" src="img/map-pin.png" width="62">
       </div>
     </section>
   </main>

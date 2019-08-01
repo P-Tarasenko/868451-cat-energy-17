@@ -1,8 +1,42 @@
+.map {
+  margin-top: 34px;
+}
+
 .map__pic {
+  position: relative;
   margin: 0 auto;
+  margin-top: -36px;
   width: 320px;
   line-height: 0;
   font-size: 0;
+  // z-index: 1;
+
+  // &::after {
+  //   content: "";
+  //   position: absolute;
+  //   width: 55px;
+  //   height: 53px;
+  //   background-image: url("../img/map-pin.png");
+  //   background-position: 0 0;
+  //   background-repeat: no-repeat;
+  //   background-size: cover;
+  //   top: 176px;
+  //   left: 129px;
+  // }
+}
+
+.map__pin {
+  position: absolute;
+  // width: 62px;
+  top: 177px;
+  left: 129px;
+}
+
+.map__wrapper {
+  position: relative;
+  padding-top: 1px;
+  z-index: 2;
+  background-color: #ffffff;
 }
 
 .map__wrapper--bg {
@@ -10,8 +44,29 @@
 }
 
 @media (min-width: @tablet) {
+  .map {
+    margin-top: 75px;
+  }
+
   .map__pic {
-    width: 708px;
-    // Временно сделал 708 так как карта резиновая
+    margin-top: 0;
+    width: 768px;
+
+    // &::after {
+    //   width: 113px;
+    //   height: 106px;
+    //   top: 150px;
+    //   left: 322px;
+    // }
+  }
+
+  .map__pin {
+    width: 122px;
+    top: 151px;
+    left: 323px;
+  }
+
+  .map__image {
+    width: 768px;
   }
 }
