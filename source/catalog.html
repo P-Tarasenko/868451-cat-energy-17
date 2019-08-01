@@ -364,13 +364,14 @@
         <div class="covenant">
           <strong class="covenant__important">Приглашаем<br> к сотрудничеству дилеров!</strong>
           <address class="covenant__address">ул. Большая Конюшенная, д. 19/8
-            <span class="covenant__top-space">Санкт-Петербург</span>
+            <span class="covenant__address-space">Санкт-Петербург</span>
           </address>
         </div>
       </div>
       <div class="map__pic">
         <picture>
-          <img src="img/bg-map-mobile@1x.png" width="320" height="400" srcset="img/bg-map-mobile@2x.png 2x"
+          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+          <img class="map__image" src="img/bg-map-mobile@1x.png" width="320" height="400" srcset="img/bg-map-mobile@2x.png 2x"
             alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
         </picture>
       </div>

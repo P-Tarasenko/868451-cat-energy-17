@@ -33,8 +33,23 @@
 }
 
 @media (min-width: @tablet) {
+  .map {
+    margin-top: 75px;
+  }
+
   .map__pic {
-    width: 708px;
-    // Временно сделал 708 так как карта резиновая
+    margin-top: 0;
+    width: 768px;
+
+    &::after {
+      width: 113px;
+      height: 106px;
+      top: 150px;
+      left: 322px;
+    }
+  }
+
+  .map__image {
+    width: 768px;
   }
 }
