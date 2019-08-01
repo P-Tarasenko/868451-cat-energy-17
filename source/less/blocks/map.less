@@ -9,7 +9,20 @@
   width: 320px;
   line-height: 0;
   font-size: 0;
-  z-index: 1;
+  // z-index: 1;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 55px;
+    height: 53px;
+    background-image: url("../img/map-pin.png");
+    background-position: 0 0;
+    background-repeat: no-repeat;
+    background-size: 60px auto;
+    top: 177px;
+    left: 130px;
+  }
 }
 
 .map__wrapper--bg {
