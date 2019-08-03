@@ -78,12 +78,12 @@
   <main class="form-main">
     <div class="form-main__wrapper">
       <h1 class="form-main__heading">Подбор программы</h1>
-      <p>Заполните анкету и мы подберем программу питания для вашего кота</p>
+      <p class="form-main__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <section class="form-section">
         <h2 class="visually-hidden">Данные и цель кота</h2>
         <form class="form-section__form" action="https://echo.htmlacademy.ru" method="post">
           <div class="form-section__group-wrapper">
-            <fieldset class="form-section__data">
+            <fieldset class="form-section__data form-section__fieldset">
               <ul class="data-list">
                 <li class="data-list__item">
                   <label class="data-list__label" for="cat-name">Имя:*</label>
@@ -94,31 +94,31 @@
                   <input class="data-list__input" name="cat-weight" id="cat-weight" type="number" placeholder="7">
                 </li>
                 <li class="data-list__item">
-                  <label class="data-list__label" for="cat-age">Возраст (лет):*</label>
+                  <label class="data-list__label" for="cat-age">Возраст (лет):</label>
                   <input class="data-list__input" name="cat-age" id="cat-age" type="number" placeholder="7">
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form-section__target">
+            <fieldset class="form-section__target form-section__fieldset">
               <ul class="target-list">
                 <li class="target-list__item">
-                  <input class="target-list__input" id="slim" type="radio" name="target" value="slim" checked>
+                  <input class="target-list__input visually-hidden" id="slim" type="radio" name="target" value="slim" checked>
                   <label class="target-list__label" for="slim">Похудение</label>
                 </li>
                 <li class="target-list__item">
-                  <input class="target-list__input" id="mass" type="radio" name="target" value="mass">
+                  <input class="target-list__input visually-hidden" id="mass" type="radio" name="target" value="mass">
                   <label class="target-list__label" for="mass">Набор массы</label>
                 </li>
                 <li class="target-list__item">
-                  <input class="target-list__input" id="recommendation" type="radio" name="target"
+                  <input class="target-list__input visually-hidden" id="recommendation" type="radio" name="target"
                     value="recommendation">
                   <label class="target-list__label" for="recommendation">Не знаю (нужен ваш совет)</label>
                 </li>
               </ul>
             </fieldset>
           </div>
-          <fieldset class="form-section__contacts">
-            <legend class="form-section__contacts-heading">
+          <fieldset class="form-section__contacts form-section__fieldset">
+            <legend class="form-section__contacts-heading form-section__title">
               Контактные данные (владельца кота)
             </legend>
             <ul class="contacts-list">
@@ -133,13 +133,13 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form-section__comments">
-            <legend class="form-section__comments-heading">Комментарий</legend>
+          <fieldset class="form-section__comments form-section__fieldset">
+            <legend class="form-section__comments-heading form-section__title">Комментарий</legend>
             <textarea class="form-section__comments-textarea" name="comments" rows="6"
               placeholder="Расскажите обо всех повадках кота" aria-label="Оставьте текст комментария здесь"></textarea>
           </fieldset>
-          <fieldset class="form-section__more">
-            <legend class="form-section__more-heading">Дополнительно</legend>
+          <fieldset class="form-section__more form-section__fieldset">
+            <legend class="form-section__more-heading form-section__title">Дополнительно</legend>
             <ul class="more-list">
               <li class="more-list__item">
                 <input class="more-list__input" type="checkbox" name="sweetener" id="sweetener" checked>

@@ -3,3 +3,44 @@
   margin: 0;
   padding: 0;
 }
+
+.target-list__item {
+  position: relative;
+  margin-bottom: 24px;
+  padding-left: 46px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.target-list__label {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid #cdcdcd;
+    top: -4px;
+    left: -46px;
+  }
+
+  &::after {
+    content: "";
+    display: none;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: @green;
+    top: 5px;
+    left: -37px;
+  }
+}
+
+.target-list__input:checked + .target-list__label::after {
+  display: block;
+}

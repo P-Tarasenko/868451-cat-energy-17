@@ -1,3 +1,46 @@
+.form-section__form {
+  font-size: 16px;
+  line-height: 1.13;
+  color: @black-text2;
+  text-transform: uppercase;
+}
+
+.form-section__title {
+  font-size: 24px;
+  line-height: 1;
+  text-transform: none;
+}
+
+.form-section__contacts-heading {
+  position: relative;
+  margin-top: 48px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 99px;
+    height: 3px;
+    background-color: @green;
+    top: 14px;
+    right: -20px;
+  }
+}
+
+.form-section__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form-section__target {
+  margin-top: 29px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  outline: 1px solid #ededed;
+  outline-offset: 19px;
+  // border-bottom: 1px solid #ededed;
+}
+
 @media (min-width: @tablet) {
   .form-section__button-wrapper {
     display: flex;
