@@ -3,6 +3,7 @@
 }
 
 .main-header__wrapper {
+  position: relative;
   width: 280px;
   margin: 0 auto;
   display: flex;
@@ -10,6 +11,16 @@
   align-items: center;
   padding-bottom: 12px;
   // min-height: 65px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 320px;
+    height: 1px;
+    background-color: #e6e6e6;
+    bottom: -1px;
+    left: -20px;
+  }
 }
 
 .main-header__link[href] {
@@ -66,6 +77,10 @@
     margin: 0;
     min-height: auto;
     padding-bottom: 0;
+
+    &::after {
+      display: none;
+    }
   }
 
   .main-header--nav-color .menu-list__link--active::after {
