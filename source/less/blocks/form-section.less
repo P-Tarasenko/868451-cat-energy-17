@@ -21,13 +21,18 @@
   }
 }
 
-.form-section__fieldset {
-  margin: 0;
-  padding: 0;
-  border: none;
+// .form-section__fieldset {
+//   margin: 0;
+//   padding: 0;
+//   border: none;
+// }
+
+.form-section__data {
+  .fieldset();
 }
 
 .form-section__contacts {
+  .fieldset();
   margin-top: 48px;
 }
 
@@ -53,7 +58,8 @@
 }
 
 .form-section__target {
-  margin-top: 27px;
+  .fieldset();
+  margin-top: 29px;
   padding-top: 8px;
   padding-bottom: 8px;
   outline: 1px solid #ededed;
@@ -62,6 +68,7 @@
 }
 
 .form-section__comments {
+  .fieldset();
   margin-top: 14px;
 }
 
@@ -88,6 +95,25 @@
   text-transform: uppercase;
   padding-top: 13px;
   padding-left: 15px;
+}
+
+.form-section__more {
+  .fieldset();
+  margin-top: 26px;
+}
+
+.form-section__more-heading {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 136px;
+    height: 3px;
+    background-color: @green;
+    top: 14px;
+    right: -159px;
+  }
 }
 
 @media (min-width: @tablet) {

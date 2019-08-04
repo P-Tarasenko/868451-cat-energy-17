@@ -46,8 +46,11 @@
       <path
         d="M7.1 19H2v-8.8H0V5.8h1.9c-.1-2 .2-3.4 1.1-4.4C3.8.5 5 .1 6.5 0H10v4.2H7.2c-.1.2-.2.8-.2 1.6h3v4.4H7.1V19zm-4-1h2.8V9.1h2.9V6.8H5.9v-.5c0-1.4 0-2.6.7-3.1l.1-.1h2.1V1H6.5c-1.2.1-2 .4-2.6 1-.8.8-1 2.3-.8 4.2l.1.6H1.1v2.3h2V18z" />
     </symbol>
+    <symbol viewBox="0 0 21.1 15.5" id="icon-tick">
+      <path d="M20.1 0L7.7 13.3 1 6.1 0 7.2l7.6 8.2.1.1L21 1.2l.1-.1z"/>
+    </symbol>
   </svg>
-  <header class="main-header main-header--nav-color">
+  <header class="main-header main-header--nav-color main-header--padding-top">
     <div class="main-header__wrapper">
       <div class="main-header__logo-container">
         <a class="main-header__link" href="index.html">
@@ -83,7 +86,7 @@
         <h2 class="visually-hidden">Данные и цель кота</h2>
         <form class="form-section__form" action="https://echo.htmlacademy.ru" method="post">
           <div class="form-section__group-wrapper">
-            <fieldset class="form-section__data form-section__fieldset">
+            <fieldset class="form-section__data">
               <ul class="data-list">
                 <li class="data-list__item">
                   <label class="data-list__label" for="cat-name">Имя:*</label>
@@ -99,7 +102,7 @@
                 </li>
               </ul>
             </fieldset>
-            <fieldset class="form-section__target form-section__fieldset">
+            <fieldset class="form-section__target">
               <ul class="target-list">
                 <li class="target-list__item">
                   <input class="target-list__input visually-hidden" id="slim" type="radio" name="target" value="slim" checked>
@@ -117,7 +120,7 @@
               </ul>
             </fieldset>
           </div>
-          <fieldset class="form-section__contacts form-section__fieldset">
+          <fieldset class="form-section__contacts">
             <legend class="form-section__contacts-heading form-section__title">
               Контактные данные (владельца кота)
             </legend>
@@ -133,28 +136,28 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset class="form-section__comments form-section__fieldset">
+          <fieldset class="form-section__comments">
             <legend class="form-section__comments-heading form-section__title">Комментарий</legend>
             <textarea class="form-section__comments-textarea" name="comments" rows="6"
               placeholder="Расскажите обо всех повадках кота" aria-label="Оставьте текст комментария здесь"></textarea>
           </fieldset>
-          <fieldset class="form-section__more form-section__fieldset">
+          <fieldset class="form-section__more">
             <legend class="form-section__more-heading form-section__title">Дополнительно</legend>
             <ul class="more-list">
               <li class="more-list__item">
-                <input class="more-list__input" type="checkbox" name="sweetener" id="sweetener" checked>
+                <input class="more-list__input visually-hidden" type="checkbox" name="sweetener" id="sweetener" checked>
                 <label class="more-list__label" for="sweetener">Сахарозаменитель</label>
               </li>
               <li class="more-list__item">
-                <input class="more-list__input" type="checkbox" name="water" id="water">
+                <input class="more-list__input visually-hidden" type="checkbox" name="water" id="water">
                 <label class="more-list__label" for="water">Питьевая вода</label>
               </li>
               <li class="more-list__item">
-                <input class="more-list__input" type="checkbox" name="milk" id="milk">
+                <input class="more-list__input visually-hidden" type="checkbox" name="milk" id="milk">
                 <label class="more-list__label" for="milk">Молоко</label>
               </li>
               <li class="more-list__item">
-                <input class="more-list__input" type="checkbox" name="vitamins" id="vitamins">
+                <input class="more-list__input visually-hidden" type="checkbox" name="vitamins" id="vitamins">
                 <label class="more-list__label" for="vitamins">Витамины</label>
               </li>
             </ul>
