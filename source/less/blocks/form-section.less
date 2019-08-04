@@ -21,12 +21,6 @@
   }
 }
 
-// .form-section__fieldset {
-//   margin: 0;
-//   padding: 0;
-//   border: none;
-// }
-
 .form-section__data {
   .fieldset();
 }
@@ -136,8 +130,117 @@
 }
 
 @media (min-width: @tablet) {
+  .form-section {
+    margin-top: 40px;
+    padding-left: 40px;
+    padding-right: 37px;
+  }
+
+  .form-section__group-wrapper {
+    padding-left: 2px;
+  }
+
+  .form-section__form {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .form-section__target {
+    margin-top: 78px;
+    margin-left: 27px;
+    margin-right: 27px;
+    outline-offset: 26px;
+  }
+
+  .form-section__title {
+    font-size: 36px;
+  }
+
+  .form-section__contacts {
+    margin-top: 103px;
+  }
+
+  .form-section__contacts-heading::after {
+    width: 145px;
+    top: 22px;
+    right: -186px;
+  }
+
+  .form-section__contacts-heading::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: @green;
+    top: 22px;
+    left: -70px;
+  }
+
+  .form-section__comments {
+    margin-top: 45px;
+  }
+
+  .form-section__comments-heading::after {
+    width: 480px;
+    top: 22px;
+    left: 219px;
+  }
+
+  .form-section__comments-heading::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #68b738;
+    top: 22px;
+    left: -70px;
+  }
+
+  .form-section__comments-textarea {
+    width: 631px;
+    min-height: 174px;
+    margin-top: 76px;
+    padding-left: 19px;
+  }
+
+  .form-section__more {
+    margin-top: 64px;
+  }
+
+  .form-section__more-heading::after {
+    width: 446px;
+    top: 22px;
+    right: -487px;
+  }
+
+  .form-section__more-heading::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 3px;
+    background-color: #68b738;
+    top: 22px;
+    left: -70px;
+  }
+
   .form-section__button-wrapper {
     display: flex;
+  }
+
+  .form-section__button {
+    width: 283px;
+    padding: 16px 0;
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .form-section__explanation {
+    width: 180px;
+    margin-top: 16px;
+    margin-left: 62px;
+    font-size: 16px;
+    line-height: 1;
+    text-align: left;
   }
 }
 

@@ -20,6 +20,31 @@
   text-transform: uppercase;
 }
 
+@media (min-width: @tablet) {
+  .contacts-list {
+    margin-top: 76px;
+    padding-left: 2px;
+  }
+
+  .contacts-list__item {
+    margin-bottom: 21px;
+  }
+
+  .contacts-list__item:last-child {
+    margin-left: -3px;
+  }
+
+  .contacts-list__item:last-child .contacts-list__input {
+    margin-left: 15px;
+  }
+
+  .contacts-list__input {
+    margin-left: 18px;
+    padding-top: 12px;
+    padding-left: 19px;
+  }
+}
+
 @media (min-width: @desktop) {
   .contacts-list {
     display: flex;

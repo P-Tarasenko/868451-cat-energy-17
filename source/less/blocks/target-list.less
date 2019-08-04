@@ -44,3 +44,23 @@
 .target-list__input:checked + .target-list__label::after {
   display: block;
 }
+
+@media (min-width: @tablet) {
+  .target-list__item {
+    margin-bottom: 33px;
+    padding-left: 60px;
+  }
+
+  .target-list__label::before {
+    width: 40px;
+    height: 40px;
+    left: -60px;
+  }
+
+  .target-list__label::after {
+    width: 18px;
+    height: 18px;
+    top: 7px;
+    left: -49px;
+  }
+}
