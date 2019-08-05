@@ -30,4 +30,29 @@
   padding-left: 13px;
   padding-top: 11px;
   padding-bottom: 12px;
+  border: 2px solid rgba(205, 205, 205, 0.5);
+}
+
+.data-list__input:hover {
+  border-color: rgba(205, 205, 205, 1);
+}
+
+.data-list__input:focus {
+  border-color: @grey-text;
+}
+
+.data-list__input:invalid {
+  border-color: #ff8282;
+}
+
+@media (min-width: @tablet) {
+  .data-list__item {
+    padding-bottom: 20px;
+  }
+
+  .data-list__input {
+    padding-top: 12px;
+    padding-bottom: 13px;
+    padding-left: 19px;
+  }
 }

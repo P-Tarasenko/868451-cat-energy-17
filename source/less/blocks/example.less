@@ -1,0 +1,87 @@
+.example {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 1px;
+  background-color: @grey;
+}
+
+.example__main-wrapper {
+  width: 280px;
+  margin: 0 auto;
+}
+
+.example__heading {
+  margin-top: 16px;
+  margin-bottom: 23px;
+  font-size: 36px;
+  line-height: 1.67;
+  font-weight: 400;
+  color: @black-text;
+}
+
+.example__desc {
+  width: 266px;
+  font-family: "Arial", sans-serif;
+  font-size: 14px;
+  line-height: 1.29;
+  color: @grey-text;
+}
+
+.example__wrapper-info {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.example__group {
+  width: 124px;
+  margin: 0;
+  border: 1px solid #cdcdcd;
+  border-radius: 2px;
+}
+
+.example__title {
+  width: 87px;
+  padding: 0 10px;
+  font-family: "Arial", sans-serif;
+  font-size: 12px;
+  line-height: 1;
+  color: @grey-text;
+  text-transform: lowercase;
+}
+
+.example__describe {
+  font-size: 24px;
+  line-height: 1;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.example__count {
+  flex-grow: 1;
+  margin-top: 22px;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.example__rotate-wrapper {
+  padding-top: 3px;
+}
+
+.example__group,
+.example__title,
+.example__rotate-wrapper {
+  transform: rotate(180deg);
+}
+
+.example__title,
+.example__rotate-wrapper {
+  text-align: center;
+}
+
+.example__slider-wrapper {
+  min-height: 320px; // Временно для сетки
+}

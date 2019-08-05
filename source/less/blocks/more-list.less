@@ -2,6 +2,47 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  margin-top: 32px;
+}
+
+.more-list__item {
+  margin-bottom: 6px;
+}
+
+.more-list__label {
+  position: relative;
+  display: block;
+  padding: 9px 0 9px 46px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #cdcdcd;
+    top: 4px;
+    left: 0;
+  }
+}
+
+.more-list__input:checked + .more-list__label::after {
+  content: "";
+  position: absolute;
+  width: 22px;
+  height: 17px;
+  background-image: url("../img/icon-tick.svg");
+  background-position: 0 0;
+  background-repeat: no-repeat;
+  top: 10px;
+  left: 4px;
+}
+
+.more-list__label:hover::before {
+  border-color: #bababa;
+}
+
+.more-list__item:active {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet) {
@@ -9,9 +50,38 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 53px;
+    padding-right: 2px;
   }
 
   .more-list__item {
     width: 285px;
+    margin-bottom: 30px;
+  }
+
+  .more-list__label {
+    padding: 13px 0 9px 59px;
+  }
+
+  .more-list__label::before {
+    width: 40px;
+    height: 40px;
+  }
+
+  .more-list__input:checked + .more-list__label::after {
+    width: 22px;
+    height: 16px;
+    top: 16px;
+    left: 10px;
+  }
+}
+
+@media (min-width: @desktop) {
+  .more-list {
+    width: 1220px;
+  }
+
+  .more-list__item {
+    width: 243px;
   }
 }
