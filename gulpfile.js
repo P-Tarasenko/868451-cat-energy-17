@@ -11,6 +11,7 @@ var server = require("browser-sync").create();
 var csso = require("gulp-csso");
 var imagemin = require("gulp-imagemin");
 var webp = require("gulp-webp");
+var svgstore = require("gulp-svgstore");
 
 gulp.task("css", function () {
   return gulp.src("source/less/style.less")
@@ -40,6 +41,13 @@ gulp.task("images", function() {
 gulp.task("webp", function () {
   return gulp.src("source/img/**/*.{png,jpg}")
   .pipe(webp({quality: 95}))
+  .pipe(gulp.dest("source/img"));
+});
+
+gulp.task("sprite", function () {
+  return gulp.src("source/img/icon-*.svg, source/img/htmlacademy.svg")
+  .pipe(svgstore({inLineSvg: true}))
+  .pipe(rename("sprite.svg"))
   .pipe(gulp.dest("source/img"));
 });
 
