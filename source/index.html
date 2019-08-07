@@ -120,7 +120,7 @@
             <div class="example__rotate-wrapper">
               <span class="example__describe">60 дней</span>
             </div>
-            <legend class="example__title">Затрачено времени</legend>
+            <legend class="example__title example__title--longer">Затрачено времени</legend>
           </fieldset>
           <p class="example__count">Затраты на питание: <span class="example__count-price">15 000 руб.</span></p>
         </div>
@@ -132,12 +132,14 @@
         <label class="example__label example__label-after" for="second-slide">Стало</label>
         <div class="example__image-before">
           <picture>
-            <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Изображение кота до приема продукта">
+            <source media="(min-width: 768px)" srcset="img/before-tablet@1x.png 1x, img/before-tablet@2x.png 2x">
+            <img class="example__pic example__pic--half-size" src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Изображение кота до приема продукта">
           </picture>
         </div>
         <div class="example__image-after">
           <picture>
-            <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Изображение кота после приема продукта">
+            <source media="(min-width: 768px)" srcset="img/after-tablet@1x.png 1x, img/after-tablet@2x.png 2x">
+            <img class="example__pic" src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Изображение кота после приема продукта">
           </picture>
         </div>
       </div>
