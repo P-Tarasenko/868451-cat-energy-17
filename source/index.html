@@ -126,7 +126,20 @@
         </div>
       </div>
       <div class="example__slider-wrapper">
-
+        <input class="example__input visually-hidden" type="radio" name="toggle" id="first-slide">
+        <label class="example__label example__label-before" for="first-slide">Было</label>
+        <input class="example__input visually-hidden" type="radio" name="toggle" id="second-slide">
+        <label class="example__label example__label-after" for="second-slide">Стало</label>
+        <div class="example__image-before">
+          <picture>
+            <img src="img/before-mobile@1x.png" srcset="img/before-mobile@2x.png 2x" width="320" height="240" alt="Изображение кота до приема продукта">
+          </picture>
+        </div>
+        <div class="example__image-after">
+          <picture>
+            <img src="img/after-mobile@1x.png" srcset="img/after-mobile@2x.png 2x" width="320" height="240" alt="Изображение кота после приема продукта">
+          </picture>
+        </div>
       </div>
     </section>
     <section class="map map--main">

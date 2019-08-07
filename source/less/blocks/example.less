@@ -83,5 +83,64 @@
 }
 
 .example__slider-wrapper {
-  min-height: 320px; // Временно для сетки
+  position: relative;
+  min-height: 348px; // Временно для сетки
+}
+
+.example__label {
+  position: absolute;
+  bottom: 35px;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: @green;
+    top: 6px;
+    z-index: 2;
+  }
+}
+
+.example__label-before {
+  left: 63px;
+
+  &::before {
+    left: 62px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 84px;
+    height: 14px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #cdcdcd;
+    top: 2px;
+    left: 56px;
+  }
+}
+
+.example__label-after {
+  right: 59px;
+
+  &::before {
+    display: none;
+    right: 63px;
+  }
+}
+
+.example__image-before,
+.example__image-after {
+  position: absolute;
+  top: 20px;
+}
+
+.example__image-after {
+  display: none;
 }
