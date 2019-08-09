@@ -1,8 +1,13 @@
 .example {
-  width: 320px;
+  width: auto;
   margin: 0 auto;
   padding-top: 1px;
   background-color: @grey;
+}
+
+.example__position-wrapper {
+  width: 320px;
+  margin: 0 auto;
 }
 
 .example__main-wrapper {
@@ -84,7 +89,9 @@
 
 .example__slider-wrapper {
   position: relative;
-  min-height: 348px; // Временно для сетки
+  width: 320px;
+  margin: 0 auto;
+  min-height: 348px;
 }
 
 .example__label {
@@ -148,7 +155,7 @@
 @media (min-width: @tablet) {
   .example {
     position: relative;
-    width: 768px;
+    width: auto;
     background-color: #ffffff;
 
     &::before {
@@ -159,6 +166,18 @@
       background-color: #e6e6e6;
       top: -35px;
     }
+  }
+
+  .example__position-wrapper {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .example__bg-wrapper {
+    position: relative;
+    top: 249px;
+    background-color: @grey;
   }
 
   .example__main-wrapper {
@@ -233,9 +252,13 @@
   }
 
   .example__slider-wrapper {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 768px;
     position: relative;
     min-height: 463px;
-    top: 249px;
+    top: 0;
     background-color: #f2f2f2;
     z-index: 0;
 
