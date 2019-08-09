@@ -1,8 +1,13 @@
 .example {
-  width: 320px;
+  width: auto;
   margin: 0 auto;
   padding-top: 1px;
   background-color: @grey;
+}
+
+.example__position-wrapper {
+  width: 320px;
+  margin: 0 auto;
 }
 
 .example__main-wrapper {
@@ -83,5 +88,369 @@
 }
 
 .example__slider-wrapper {
-  min-height: 320px; // Временно для сетки
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+  min-height: 348px;
+}
+
+.example__label {
+  position: absolute;
+  bottom: 35px;
+  font-size: 16px;
+  line-height: 1.25;
+  text-transform: uppercase;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 35px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: @green;
+    top: 6px;
+    z-index: 2;
+  }
+}
+
+.example__label-before {
+  left: 63px;
+
+  &::before {
+    left: 62px;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 84px;
+    height: 14px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    border: 1px solid #cdcdcd;
+    top: 2px;
+    left: 56px;
+  }
+}
+
+.example__label-after {
+  right: 59px;
+
+  &::before {
+    display: none;
+    right: 63px;
+  }
+}
+
+.example__image-before,
+.example__image-after {
+  position: absolute;
+  top: 20px;
+}
+
+.example__image-after {
+  display: none;
+}
+
+@media (min-width: @tablet) {
+  .example {
+    position: relative;
+    width: auto;
+    background-color: #ffffff;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 768px;
+      height: 1px;
+      background-color: #e6e6e6;
+      top: -35px;
+    }
+  }
+
+  .example__position-wrapper {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .example__bg-wrapper {
+    position: relative;
+    top: 249px;
+    background-color: @grey;
+  }
+
+  .example__main-wrapper {
+    width: 708px;
+  }
+
+  .example__heading {
+    margin-top: 8px;
+    font-size: 60px;
+    line-height: 1;
+  }
+
+  .example__desc {
+    width: 678px;
+    margin-top: 64px;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  .example__group {
+    width: 162px;
+    padding: 12px;
+
+    &:first-child {
+      margin-right: 42px;
+    }
+  }
+
+  .example__describe {
+    font-size: 30px;
+    line-height: 1.23;
+  }
+
+  .example__title {
+    width: 114px;
+    padding: 0;
+    font-size: 14px;
+  }
+
+  .example__title--longer {
+    width: 136px;
+  }
+
+  .example__count {
+    width: 175px;
+    margin-left: auto;
+    margin-top: 11px;
+    margin-bottom: 0;
+    flex-grow: 0;
+    font-size: 20px;
+    line-height: 1;
+    text-align: right;
+  }
+
+  .example__count-price {
+    display: inline-block;
+    margin-top: 10px;
+  }
+
+  .example__wrapper-info {
+    justify-content: flex-start;
+    margin-top: 53px;
+  }
+
+  .example__pic {
+    width: 690px;
+  }
+
+  .example__pic--half-size {
+    max-width: none;
+  }
+
+  .example__slider-wrapper {
+    width: 768px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    min-height: 463px;
+    top: 0;
+    background-color: #f2f2f2;
+    z-index: 0;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 384px;
+      height: 463px;
+      background-color: #eaeaea;
+      right: 0;
+      z-index: 0;
+    }
+  }
+
+  .example__image-before {
+    width: 338px;
+    overflow: hidden;
+    top: -169px;
+    left: 46px;
+    z-index: 3;
+  }
+
+  .example__image-after {
+    display: block;
+    top: -169px;
+    right: 32px;
+    clip: rect(auto auto auto 338px);
+    z-index: 1;
+  }
+
+  .example__label {
+    padding-bottom: 5px;
+    font-size: 20px;
+    line-height: 1;
+    bottom: 68px;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.23);
+    z-index: 1;
+    cursor: pointer;
+
+    &:hover {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    }
+
+    &:active {
+      border-bottom-color: transparent;
+    }
+  }
+
+  .example__label-before {
+    left: 98px;
+
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      width: 428px;
+      height: 6px;
+      border-radius: 2.5px;
+      border: none;
+      background-color: #dcdcdc;
+      top: 7px;
+      left: 71px;
+    }
+  }
+
+  .example__label-after {
+    right: 100px;
+
+    &::before {
+      top: -7px;
+      right: 267px;
+      display: block;
+      width: 34px;
+      height: 34px;
+      background-color: #ffffff;
+      border-radius: 50%;
+      border: 1px solid #cdcdcd;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      background-color: @green;
+      border-radius: 50%;
+      top: 6px;
+      right: 280px;
+      z-index: 2;
+    }
+
+    &:hover::before {
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.25);
+    }
+
+    &:active::before {
+      border: 2px solid @green;
+      box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+@media (min-width: @desktop) {
+  .example {
+    width: auto;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .example__position-wrapper {
+    width: 1220px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .example__bg-wrapper {
+    position: relative;
+    background-color: @grey;
+    top: -387px;
+  }
+
+  .example__main-wrapper {
+    position: relative;
+    display: inline-block;
+    // margin-left: 110px;
+    width: 600px;
+    z-index: 2;
+  }
+
+  .example__heading {
+    margin-top: 0;
+  }
+
+  .example__desc {
+    width: 433px;
+    margin-top: 146px;
+  }
+
+  .example__wrapper-info {
+    width: 367px;
+    margin-top: 68px;
+  }
+
+  .example__count {
+    width: 327px;
+    margin-top: 44px;
+    margin-left: 0;
+    flex-grow: 1;
+    text-align: left;
+  }
+
+  .example__count-price {
+    margin-left: 60px;
+  }
+
+  .example__slider-wrapper {
+    width: 1220px;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -474px;
+
+
+    &::after {
+      width: 395px;
+      right: -110px;
+    }
+  }
+
+  .example__image-before {
+    width: 365px;
+    top: -190px;
+    left: 570px;
+  }
+
+  .example__image-after {
+    top: -190px;
+    right: -40px;
+    clip: rect(auto auto auto 365px);
+  }
+
+  .example__label {
+    bottom: 69px;
+  }
+
+  .example__label-after {
+    right: 1px;
+  }
+
+  .example__label-before {
+    left: 650px;
+  }
 }
