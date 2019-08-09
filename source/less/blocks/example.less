@@ -342,17 +342,29 @@
 
 @media (min-width: @desktop) {
   .example {
-    width: 1440px;
+    width: auto;
 
     &::before {
       display: none;
     }
   }
 
+  .example__position-wrapper {
+    width: 1220px;
+    position: relative;
+    margin: 0 auto;
+  }
+
+  .example__bg-wrapper {
+    position: relative;
+    background-color: @grey;
+    top: -387px;
+  }
+
   .example__main-wrapper {
     position: relative;
     display: inline-block;
-    margin-left: 110px;
+    // margin-left: 110px;
     width: 600px;
     z-index: 2;
   }
@@ -384,23 +396,28 @@
   }
 
   .example__slider-wrapper {
-    top: -387px;
+    width: 1220px;
+    top: 0;
+    margin-left: auto;
+    margin-right: auto;
     margin-bottom: -474px;
+
 
     &::after {
       width: 395px;
+      right: -110px;
     }
   }
 
   .example__image-before {
     width: 365px;
     top: -190px;
-    left: 680px;
+    left: 570px;
   }
 
   .example__image-after {
     top: -190px;
-    right: 70px;
+    right: -40px;
     clip: rect(auto auto auto 365px);
   }
 
@@ -409,10 +426,10 @@
   }
 
   .example__label-after {
-    right: 110px;
+    right: 1px;
   }
 
   .example__label-before {
-    left: 760px;
+    left: 650px;
   }
 }
