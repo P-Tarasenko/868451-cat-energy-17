@@ -421,27 +421,32 @@
     </div>
     <section class="map">
       <h2 class="visually-hidden">Мы на карте:</h2>
-      <div class="map__wrapper map__wrapper--bg">
-        <div class="covenant">
-          <strong class="covenant__important">Приглашаем<br> к сотрудничеству дилеров!</strong>
-          <address class="covenant__address">ул. Большая Конюшенная, д. 19/8
-            <span class="covenant__address-space">Санкт-Петербург</span>
-          </address>
+      <iframe class="map__interactive"
+        src="https://yandex.ru/map-widget/v1/?um=constructor%3A195bb669bc15f81f222b8ba2b3a103b9c45d44708996ac21379f4ec8301603ce&amp;source=constructor"
+        height="364"></iframe>
+      <div class="map__container">
+        <div class="map__wrapper map__wrapper--bg">
+          <div class="covenant">
+            <strong class="covenant__important">Приглашаем<br> к сотрудничеству дилеров!</strong>
+            <address class="covenant__address">ул. Большая Конюшенная, д. 19/8
+              <span class="covenant__address-space">Санкт-Петербург</span>
+            </address>
+          </div>
         </div>
-      </div>
-      <div class="map__pic">
-        <picture>
-          <source media="(min-width: 1300px)" type="image/webp"
-            srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
-          <source media="(min-width: 768px)" type="image/webp"
-            srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
-          <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
-          <img class="map__image" src="img/bg-map-mobile@1x.png" width="320" height="400"
-            srcset="img/bg-map-mobile@2x.png 2x" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
-        </picture>
-        <img class="map__pin" src="img/map-pin.png" width="62" alt="">
+        <div class="map__pic">
+          <picture>
+            <source media="(min-width: 1300px)" type="image/webp"
+              srcset="img/bg-map-desktop@1x.webp 1x, img/bg-map-desktop@2x.webp 2x">
+            <source media="(min-width: 768px)" type="image/webp"
+              srcset="img/bg-map-tablet@1x.webp 1x, img/bg-map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/bg-map-mobile@1x.webp 1x, img/bg-map-mobile@2x.webp 2x">
+            <source media="(min-width: 1300px)" srcset="img/bg-map-desktop@1x.png 1x, img/bg-map-desktop@2x.png 2x">
+            <source media="(min-width: 768px)" srcset="img/bg-map-tablet@1x.png 1x, img/bg-map-tablet@2x.png 2x">
+            <img class="map__image" src="img/bg-map-mobile@1x.png" width="320" height="400"
+              srcset="img/bg-map-mobile@2x.png 2x" alt="ул. Большая Конюшенная, д. 19/8 Санкт-Петербург">
+          </picture>
+          <img class="map__pin" src="img/map-pin.png" width="62" alt="">
+        </div>
       </div>
     </section>
   </main>
