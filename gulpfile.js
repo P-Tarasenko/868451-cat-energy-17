@@ -16,6 +16,7 @@ var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
 var minijs = require("gulp-uglify");
+var minihtml = require("gulp-htmlmin");
 
 gulp.task("uglify", function () {
   return gulp.src("source/js/menu.js")
@@ -83,6 +84,7 @@ gulp.task("html", function () {
   .pipe(posthtml([
     include()
   ]))
+  .pipe(minihtml({collapseWhitespace: true}))
   .pipe(gulp.dest("build"));
 });
 
