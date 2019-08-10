@@ -15,6 +15,14 @@ var svgstore = require("gulp-svgstore");
 var posthtml = require("gulp-posthtml");
 var include = require("posthtml-include");
 var del = require("del");
+var minijs = require("gulp-uglify");
+
+gulp.task("uglify", function () {
+  return gulp.src("source/js/menu.js")
+    .pipe(minijs())
+    .pipe(rename("menu.min.js"))
+    .pipe(gulp.dest("source/js"));
+});
 
 gulp.task("clean", function () {
   return del("build");
